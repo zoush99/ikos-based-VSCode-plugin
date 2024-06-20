@@ -1,0 +1,5 @@
+# Let Prettier handle Markdown formatting.
+line-length: false
+
+blanks-around-fences:
+  list_items: false

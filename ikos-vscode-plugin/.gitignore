@@ -1,0 +1,11 @@
+/scratchfile.*
+/*.log
+node_modules
+/dist
+**/out/*
+/*.patch
+/cppcheck-*
+*.vsix
+*.pdf
+/.vscode-test
+/coverage
