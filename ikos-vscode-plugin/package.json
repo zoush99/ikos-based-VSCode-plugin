@@ -1,14 +1,14 @@
 {
-  "name": "C-Cpp-ikos-flylint",
-  "displayName": "C-Cpp-ikos+ Advanced Lint",
+  "name": "c-cpp-ikos-flylint",
+  "displayName": "c-cpp-ikos+ Advanced Lint",
   "description": "An advanced, modern, static analysis extension for C/C++ that supports a number of back-end analyzer programs such as ikos.",
   "author": {
     "name": "zoush99",
     "email": "zoush99@gmail.com",
-    "url": "http://zoush99.github.io/"
+    "url": "https://zoush99.github.io/"
   },
   "publisher": "zoush99",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "license": "MIT",
   "icon": "C-Cpp-FlyLint_icon.png",
   "galleryBanner": {
