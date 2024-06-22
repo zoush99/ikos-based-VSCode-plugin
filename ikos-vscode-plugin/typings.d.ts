@@ -10,6 +10,7 @@ declare module 'which';
 
 declare module 'unixify';
 
+// By zoush99
 declare module 'node:buffer';
 
 declare module 'node:stream';
