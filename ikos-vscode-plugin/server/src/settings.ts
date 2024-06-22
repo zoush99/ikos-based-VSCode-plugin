@@ -60,6 +60,16 @@ export interface CppCheckSeverityMaps {
     information: SeverityLevel;
 }
 
+// By zoush99
+// export type SeverityLevel = 'Error' | 'Warning' | 'Information' | 'Hint' | 'None';
+export interface ikosSeverityMaps {
+    error: SeverityLevel;
+    warning: SeverityLevel;
+    style: SeverityLevel;
+    portability: SeverityLevel;
+    information: SeverityLevel;
+    
+}
 export interface FlexelintSeverityMaps {
     Error: SeverityLevel;
     Warning: SeverityLevel;
@@ -138,6 +148,13 @@ export interface Settings {
         language: 'c' | 'c++' | null;
         severityLevels: CppCheckSeverityMaps;
         extraArgs: string[] | null;
+    }
+    // By zoush99
+    // add ikos
+    ikos: {
+        enable: boolean;
+        executable: string;
+        severityLevels: CppCheckSeverityMaps;
     }
     clang: {
         enable: boolean;
