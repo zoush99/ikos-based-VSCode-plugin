@@ -94,7 +94,17 @@ export const defaultConfig: GlobalSettings = {
             addons: [],
             extraArgs: null,
         },
-
+        ikos:{
+            enable: true,
+            executable: 'ikos',
+            severityLevels: {
+                error: 'Error',
+                warning: 'Warning',
+                style: 'Information',
+                portability: 'Warning',
+                information: 'Information'
+            }
+        },
         clang: {
             enable: true,
             executable: (isWindows ? 'clang.exe' : 'clang'),

@@ -68,7 +68,7 @@ export interface ikosSeverityMaps {
     style: SeverityLevel;
     portability: SeverityLevel;
     information: SeverityLevel;
-    
+
 }
 export interface FlexelintSeverityMaps {
     Error: SeverityLevel;
@@ -154,7 +154,7 @@ export interface Settings {
     ikos: {
         enable: boolean;
         executable: string;
-        severityLevels: CppCheckSeverityMaps;
+        severityLevels: ikosSeverityMaps;
     }
     clang: {
         enable: boolean;
