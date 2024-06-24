@@ -1,15 +1,15 @@
 {
-  "name": "c-cpp-flylint",
+  "name": "c-cpp-ikos-flylint",
   "private": "true",
   "displayName": "C/C++ Advanced Lint",
-  "description": "An advanced, modern, static analysis extension for C/C++ that supports a number of back-end analyzer programs.",
+  "description": "An advanced, modern, static analysis extension for C/C++ that supports a number of back-end analyzer programs such as ikos.",
   "author": {
-    "name": "Joseph Benden",
-    "email": "joe@benden.us",
-    "url": "http://benden.us/"
+    "name": "zoush99",
+    "email": "zoush99@gmail.com",
+    "url": "https://zoush99.github.io/"
   },
-  "publisher": "jbenden",
-  "version": "1.15.0",
+  "publisher": "zoush99",
+  "version": "0.0.0",
   "license": "MIT",
   "icon": "C-Cpp-FlyLint_icon.png",
   "galleryBanner": {
@@ -18,15 +18,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jbenden/vscode-c-cpp-flylint.git"
+    "url": "https://github.com/zoush99/ikos-based-VSCode-plugin.git"
   },
   "bugs": {
-    "url": "https://github.com/jbenden/vscode-c-cpp-flylint/issues",
-    "email": "joe@benden.us"
+    "url": "https://github.com/zoush99/ikos-based-VSCode-plugin/issues",
+    "email": "zoush99@gmail.com"
   },
-  "homepage": "https://github.com/jbenden/vscode-c-cpp-flylint/blob/main/README.md",
+  "homepage": "https://github.com/zoush99/ikos-based-VSCode-plugin/blob/main/README.md",
   "engines": {
-    "vscode": "^1.52.0"
+    "vscode": "^1.90.2"
   },
   "devDependencies": {
     "@types/mock-fs": "^4.13.0",

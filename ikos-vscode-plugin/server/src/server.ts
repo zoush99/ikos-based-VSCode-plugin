@@ -33,6 +33,7 @@ import { RobustPromises, path as sysPath } from './utils';
 
 import { Clang } from './linters/clang';
 import { CppCheck } from './linters/cppcheck';
+import { ikos } from './linters/ikos';
 import { FlawFinder } from './linters/flawfinder';
 import { Flexelint } from './linters/flexelint';
 import { PclintPlus } from './linters/pclintplus';
@@ -230,6 +231,7 @@ async function reconfigureExtension(currentSettings: Settings, workspaceRoot: st
 
     if (currentSettings.clang.enable) { linters.push(await (new Clang(currentSettings, workspaceRoot).initialize()) as Clang); }
     if (currentSettings.cppcheck.enable) { linters.push(await (new CppCheck(currentSettings, workspaceRoot).initialize()) as CppCheck); }
+    if (currentSettings.ikos.enable) {linters.push(await(new ikos(currentSettings, workspaceRoot).initialize()) as ikos); }
     if (currentSettings.flexelint.enable) { linters.push(await (new Flexelint(currentSettings, workspaceRoot).initialize()) as Flexelint); }
     if (currentSettings.pclintplus.enable) { linters.push(await (new PclintPlus(currentSettings, workspaceRoot).initialize()) as PclintPlus); }
     if (currentSettings.flawfinder.enable) { linters.push(await (new FlawFinder(currentSettings, workspaceRoot).initialize()) as FlawFinder); }
