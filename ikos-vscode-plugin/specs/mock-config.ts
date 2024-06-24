@@ -100,9 +100,8 @@ export const defaultConfig: GlobalSettings = {
             severityLevels: {
                 error: 'Error',
                 warning: 'Warning',
-                style: 'Information',
-                portability: 'Warning',
-                information: 'Information'
+                info: 'Information',
+                note: 'Hint'
             }
         },
         clang: {

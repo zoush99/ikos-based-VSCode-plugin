@@ -65,10 +65,8 @@ export interface CppCheckSeverityMaps {
 export interface ikosSeverityMaps {
     error: SeverityLevel;
     warning: SeverityLevel;
-    style: SeverityLevel;
-    portability: SeverityLevel;
-    information: SeverityLevel;
-
+    info: SeverityLevel;
+    note: SeverityLevel;
 }
 export interface FlexelintSeverityMaps {
     Error: SeverityLevel;

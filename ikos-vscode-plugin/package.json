@@ -656,6 +656,85 @@
       },
       {
         "type": "object",
+        "title": "ikos",
+        "properties": {
+          "c-cpp-flylint.ikos.enable": {
+            "order": 0,
+            "type": "boolean",
+            "default": true,
+            "description": "Enable or disable the ikos linter"
+          },
+          "c-cpp-flylint.ikos.executable": {
+            "order": 1,
+            "type": "string",
+            "description": "This option allows you to override the executable called when using FlawFinder",
+            "default": "ikos"
+          },
+          "c-cpp-flylint.ikos.severityLevels": {
+            "order": 2,
+            "type": "object",
+            "description": "Maps the severity levels of CppCheck to VSCode severity levels (Error, Warning, Information, Hint). Setting to 'None' will not show the severity type at all.",
+            "default": {
+              "error": "error",
+              "warning": "Warning",
+              "info": "information",
+              "note": "Hint"
+            },
+            "properties": {
+              "error": {
+                "description": "Used when lv 0 issues are found.",
+                "type": "string",
+                "default": "Error",
+                "enum": [
+                  "Error",
+                  "Warning",
+                  "Information",
+                  "Hint",
+                  "None"
+                ]
+              },
+              "warning": {
+                "description": "Used when lv 1 issues are found.",
+                "type": "string",
+                "default": "Warning",
+                "enum": [
+                  "Error",
+                  "Warning",
+                  "Information",
+                  "Hint",
+                  "None"
+                ]
+              },
+              "info": {
+                "description": "Used when lv 2 issues are found.",
+                "type": "string",
+                "default": "Warning",
+                "enum": [
+                  "Error",
+                  "Warning",
+                  "Information",
+                  "Hint",
+                  "None"
+                ]
+              },
+              "note": {
+                "description": "Used when lv 3 issues are found.",
+                "type": "string",
+                "default": "Warning",
+                "enum": [
+                  "Error",
+                  "Warning",
+                  "Information",
+                  "Hint",
+                  "None"
+                ]
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "object",
         "title": "Flexelint",
         "properties": {
           "c-cpp-flylint.flexelint.enable": {
